@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Create your story</title>
+
+  <style type="text/css">
+     h1 {
+      font-family: "Courier New";
+      color: #E5C100;
+      font-size: 60px;
+      }
+
+      h3 {
+      font-family: "Courier New";
+      font-size: 50px;
+      }
+
+      body {
+      color: grey;
+      font-family: verdana;
+      position: relative; 
+      left: 20%;
+      }
+
+      button {
+      background-color: #E5C100;
+      border: 4px solid #E5C100;
+      border-radius: 12px;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      }
+
+      input[type=text] {
+      border: 2px solid #E5C100;
+      border-radius: 12px;
+      padding: 8px 10px;
+      }
+
+      input[type=reset] {
+      background-color: white;
+      border: 4px solid #E5C100;
+      border-radius: 12px;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      }
+  </style>
+  </head>
+  <body>
+    <h3>Create your story</h3>
+    <form action="/story" method="POST">
+      <table cellpadding="5" cellspacing="10">
+        <tr>
+          <td>Pick your story</td>
+          <td><input type="radio" id="Spooky" name="story" value="Spooky">
+          <label for="Spooky">A Spooky Story</label><br>
+          <input type="radio" id="Christmas" name="story" value="Christmas">
+          <label for="Christmas">A Christmas Story</label><br>
+          <input type="radio" id="Love" name="story" value="Love">
+          <label for="Love">A Love Story</label></td>
+        </tr>
+        
+        <tr>
+          <td>Type your name</td>
+          <td><input type="text" name="username" placeholder="Name"></td>
+        </tr>
+        
+        <tr>
+          <td>Name your protagonist</td>
+          <td><input type="text" name="protagonist" placeholder="Name" placeholder="Name"></td>
+        </tr>
+        <tr>
+          <td>Name your secondary charater</td>
+          <td><input type="text" name="secondary" placeholder="Name"></td>
+        </tr>
+        <tr>
+          <td>Type 2 nouns</td>
+          <td><input type="text" name="noun1" placeholder="e.g. boy, dog, princess""></td>
+          <td><input type="text" name="noun2" placeholder="e.g. boy, dog, princess""></td>
+        </tr>
+        <tr>
+          <td>Type 5 ajectives</td>
+          <td><input type="text" name="adjective1" placeholder="e.g. cold, blue, old"></td>
+          <td><input type="text" name="adjective2" placeholder="e.g. cold, blue, old"></td>
+          <td><input type="text" name="adjective3" placeholder="e.g. cold, blue, old"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="text" name="adjective4" placeholder="e.g. cold, blue, old"></td>
+          <td><input type="text" name="adjective5" placeholder="e.g. cold, blue, old"></td>
+        </tr>
+         <tr>
+          <td>Type a generic place</td>
+          <td><input type="text" name="place" placeholder="e.g. bathroom, hotel"></td>
+        </tr>
+        <tr>
+          <td>Type 3 emotion adjectives</td>
+          <td><input type="text" name="emotion1" placeholder="e.g. happy, scared, sad"></td>
+          <td><input type="text" name="emotion2" placeholder="e.g. happy, scared, sad"></td>
+          <td><input type="text" name="emotion3" placeholder="e.g. happy, scared, sad"></td>
+        </tr>
+        <tr>
+          <td>Type 2 body parts</td>
+          <td><input type="text" name="body_part1" placeholder="e.g. arm, hand, shoulder"></td>
+          <td><input type="text" name="body_part2" placeholder="e.g. arm, hand, shoulder"></td>
+        </tr>
+        <tr>
+          <td>Type 2 adverbs of manner</td>
+          <td><input type="text" name="adverb1" placeholder="e.g. slowly, smoothly"></td>
+          <td><input type="text" name="adverb2" placeholder="e.g. slowly, smoothly"></td>
+        </tr>
+        <tr>
+          <td>Type 2 verbs in present tense</td>
+          <td><input type="text" name="verb1" placeholder="e.g. jump, find, scare"></td>
+          <td><input type="text" name="verb2" placeholder="e.g. jump, find, scare"></td>
+        </tr>
+        <tr>
+          <td>Type a verb in past tense</td>
+          <td><input type="text" name="verb_past" placeholder="e.g. jumped, found, scared"></td>
+        </tr>
+        <tr>
+          <td>Type an object</td>
+          <td><input type="text" name="objects" placeholder="e.g. ring, book, bag"></td>
+        </tr>
+        
+      </table>
+      <button type="submit">Create Story</button>
+      <input type="reset">
+    </form>
+    
+  </body>
+</html>
